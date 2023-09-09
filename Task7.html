@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .Divelement {
+            display: inline-block;
+            width: 500px;
+            height: 100px;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 24px;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+        h5{
+            text-align: center;
+        }
+        #vertical{
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;    
+            width: 180px;
+            border: 1px solid black;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;           
+        }
+        li a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background-color: lightblue;
+
+        }
+        li a:hover{
+            background-color: orange;
+        }
+        #list a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        #list a:hover{
+            background-color: darkgrey;
+        }
+
+
+        #horizontal{
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;
+            width: 400px;
+            border: 1px solid black;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="Divelement"> 
+
+        <h5>Vertical Navigation Bar</h5>
+        <ul id="vertical">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+</div>
+<div class="Divelement">
+    <h5>Horizontal Navigation Bar</h5>
+        <ul id="horizontal">
+            <li id="list"><a href="#">Home</a></li>
+            <li id="list"><a href="#">Java</a></li>
+            <li id="list"><a href="#">HTML</a></li>
+            <li id="list"><a href="#">CSS</a></li>
+            <li id="list"><a href="#" class="split">Bootstrap</a></li>
+        </ul>
+</div>
+</body>
+</html>
